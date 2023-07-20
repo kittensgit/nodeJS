@@ -1,8 +1,9 @@
-const fecthData = async () => {
-    const data = await fetch('https://jsonplaceholder.typicode.com/todos')
-        .then(response => response.json())        
-        .then(data => console.log(data))
-    return data
+const obj = {
+    id: 1
 }
 
-console.log(fecthData())
+const json = JSON.stringify(obj)
+console.log(json)
+
+const objFromJson = JSON.parse(json)
+console.log(objFromJson)
