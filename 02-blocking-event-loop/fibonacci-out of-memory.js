@@ -14,4 +14,5 @@ function fib(n) {
     })
 }
 
-fib(11).then((res) => console.log(res))
+// heap out of memory
+fib(40).then((res) => console.log(res))
