@@ -1,6 +1,6 @@
 let isRunning = true;
 
-setTimeout(() => isRunning = false, 100)
+setTimeout(() => isRunning = false, 0)
 process.nextTick(() => console.log('next tick'))
 
 function setImmediatePromise() {
