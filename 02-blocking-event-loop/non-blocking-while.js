@@ -1,18 +1,18 @@
 let isRunning = true;
 
-setTimeout(() => isRunning = false, 0)
-process.nextTick(() => console.log('next tick'))
+setTimeout(() => (isRunning = false), 0);
+process.nextTick(() => console.log('next tick'));
 
 function setImmediatePromise() {
     return new Promise((resolve, reject) => {
-        setImmediate(() => resolve())
-    })
+        setImmediate(() => resolve());
+    });
 }
 async function whileLoop() {
     while (isRunning) {
-        console.log('While loop is running...')
-        await setImmediatePromise()
+        console.log('While loop is running...');
+        await setImmediatePromise();
     }
 }
 
-whileLoop().then(() => console.log('while ended'))
+whileLoop().then(() => console.log('while ended'));
