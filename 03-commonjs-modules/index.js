@@ -1,11 +1,5 @@
-// console.log(arguments.callee.toString());
+const { myName, myHobbies, myFavoriteNumber } = require('./multiple-exports');
 
-// console.log(module);
-
-// console.log(__filename);
-
-// console.log(__dirname);
-
-// console.log(exports === module.exports);
-
-// console.log(require);
+console.log(myName);
+console.log(myHobbies);
+console.log(myFavoriteNumber);
